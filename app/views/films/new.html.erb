@@ -1,0 +1,13 @@
+<h1>Documentary#new</h1>
+<p>Add a documentary</p>
+<%=form_with model:@films, method: :post do |form| %>
+
+<%= form.label :name, "Nombre Documental", class:"form-label"%>
+<%= form.text_field :name, class:"form-control"%>
+<%= form.label :synopsis, "Synopsis", class:"form-label"%>
+<%= form.text_area :synopsis, class:"form-control"%>
+<%= form.label :director, "Director", class:"form-label"%>
+<%= form.text_field :director, class:"form-control"%>
+<%=form.submit "ADD", class:"btn btn-dark"%>
+
+<%end%>

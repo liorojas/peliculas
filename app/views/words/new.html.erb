@@ -1,0 +1,14 @@
+<h1>doc#new</h1>
+<p>add a docu</p>
+
+<%=form_with model:@word, method: :post do |form| %>
+
+<%= form.label :name, "Nombre Serie", class:"form-label"%>
+<%= form.text_field :name, class:"form-control"%>
+<%= form.label :synopsis, "Synopsis", class:"form-label"%>
+<%= form.text_area :synopsis, class:"form-control"%>
+<%= form.label :dirctor, "Director", class:"form-label"%>
+<%= form.text_field :dirctor, class:"form-control"%>
+<%=form.submit "ADD", class:"btn btn-dark"%>
+
+<%end%>

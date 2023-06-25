@@ -1,0 +1,12 @@
+<h1>add a movie and your commets bout it </h1>
+<%=form_with model: @movie, method: :post do |form|%>
+
+<%= form.label :name, "Nombre película", class:"form-label"%>
+<%= form.text_field :name, class:"form-control"%>
+<%= form.label :synopsis, "Synopsis", class:"form-label"%>
+<%= form.text_area :synopsis, class:"form-control"%>
+<%= form.label :director, "Director", class:"form-label"%>
+<%= form.text_field :director, class:"form-control"%>
+<%=form.submit "ADD", class:"btn btn-dark"%>
+
+<%end%>

@@ -1,0 +1,15 @@
+<h1>Documentary#index</h1>
+<p>Find me in app/views/films/index.html.erb</p>
+<%=link_to "ADD Documentary", films_new_path, class:'btn btn-dark'%>
+<%=link_to "MENU", root_path, class:'btn btn-dark'%>
+
+<%=@films.count%>
+<%@films.each do |m|%>
+<h2>Nombre de la Documental</h2>
+<h3 class=" fw-bold text-danger"><%=m.name%></h3>
+<h2>Sinopsis</h2>
+<h4><%=m.synopsis%></h4>
+<h2>Director</h2>
+<h3><%=m.director%></h3>
+<%end%>
+

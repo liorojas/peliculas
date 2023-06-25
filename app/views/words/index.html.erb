@@ -1,0 +1,14 @@
+<h1>doc#index</h1>
+<%=link_to "ADD docu", words_new_path, class:'btn btn-dark'%>
+<%=link_to "MENU", root_path, class:'btn btn-dark'%>
+
+<%=@words.count%>
+<%@words.each do |m|%>
+<h2>Nombre del docu</h2>
+<h3 class=" fw-bold text-danger"><%=m.name%></h3>
+<h2>Sinopsis</h2>
+<h4><%=m.synopsis%></h4>
+<h2>Director</h2>
+<h3><%=m.dirctor%></h3>
+<%end%>
+

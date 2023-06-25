@@ -1,0 +1,14 @@
+<h1>Series#new</h1>
+<p>add a serie</p>
+
+<%=form_with model:@program, method: :post do |form| %>
+
+<%= form.label :name, "Nombre Serie", class:"form-label"%>
+<%= form.text_field :name, class:"form-control"%>
+<%= form.label :synopsis, "Synopsis", class:"form-label"%>
+<%= form.text_area :synopsis, class:"form-control"%>
+<%= form.label :director, "Director", class:"form-label"%>
+<%= form.text_field :director, class:"form-control"%>
+<%=form.submit "ADD", class:"btn btn-dark"%>
+
+<%end%>

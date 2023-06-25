@@ -1,0 +1,14 @@
+<h1>Movies#index</h1>
+<%=link_to "ADD Movies", movies_new_path, class:'btn btn-dark'%>
+<%=link_to "MENU", root_path, class:'btn btn-dark'%>
+
+<%=@movies.count%>
+<%@movies.each do |m|%>
+<h2>Nombre de la Pelicula</h2>
+<h3 class=" fw-bold text-danger"><%=m.name%></h3>
+<h2>Sinopsis</h2>
+<h4><%=m.synopsis%></h4>
+<h2>Director</h2>
+<h3><%=m.director%></h3>
+<%end%>
+
